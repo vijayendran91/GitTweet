@@ -9,6 +9,7 @@ ruby '2.5.0'
 
 
 gem 'prawn', '~> 2.1'
+gem 'jquery-rails'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

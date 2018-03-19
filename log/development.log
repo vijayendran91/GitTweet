@@ -768,3 +768,452 @@ Processing by WelcomeController#index as HTML
 Completed 200 OK in 46ms (Views: 45.3ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/articles" for 127.0.0.1 at 2018-03-19 12:52:57 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+  Rendered layouts/_navigation.html.erb (2.1ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 66ms (Views: 59.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 12:53:01 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered articles/_form.html.erb (5.0ms)
+  Rendered articles/new.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 62ms (Views: 53.6ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2018-03-19 12:53:08 +0530
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQb+lg64tySrC8lUuXbDOSveEKn0W1R8ijxbGO7JzZnepo3TswredInZ8Y6EIVgSURrBYKPImfLFAAfnnL3dFQ==", "article"=>{"title"=>"Hi all", "description"=>"Hi"}, "commit"=>"Create Blog"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.3ms)
+  Rendered articles/_form.html.erb (5.0ms)
+  Rendered articles/new.html.erb within layouts/application (6.8ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 145ms (Views: 76.5ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:53:21 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 68.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 12:53:29 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered users/new.html.erb within layouts/application (11.6ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 79ms (Views: 68.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:39 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:41 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 34ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:42 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:42 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 34ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:42 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 33ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:42 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 35ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:43 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 31ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:43 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:43 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 25ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:43 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 24ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:43 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 36ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:46 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 12:53:47 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UWsybT2y/zW8r10mxn2sR0lrlgn1Lh0Q0wU+9/GTOLquy0EogACWZZ59Zfz7KjdsM69HwKK90J6cOWIIg+coNg==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+No template found for UsersController#create, rendering head :no_content
+Completed 204 No Content in 29ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2018-03-19 12:53:49 +0530
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/_navigation.html.erb (0.9ms)
+  Rendered layouts/_messages.html.erb (1.3ms)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:54:50 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 12:55:43 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 65.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2018-03-19 13:00:42 +0530
+Processing by ArticlesController#new as HTML
+  Rendering articles/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.0ms)
+  Rendered articles/_form.html.erb (5.1ms)
+  Rendered articles/new.html.erb within layouts/application (6.5ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:03:29 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 70ms (Views: 68.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-19 13:03:35 +0530
+Processing by WelcomeController#about as HTML
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navigation.html.erb (1.8ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 62ms (Views: 60.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2018-03-19 13:03:38 +0530
+Processing by WelcomeController#about as HTML
+  Rendering welcome/about.html.erb within layouts/application
+  Rendered welcome/about.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 52ms (Views: 50.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:07:17 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.9ms)
+  Rendered users/new.html.erb within layouts/application (6.1ms)
+  Rendered layouts/_navigation.html.erb (1.4ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 104ms (Views: 82.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:07:29 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/O0p9bK2DMkTCtBPhhoQ89fHFSbaFtCSfnHOyX6+o/wDTVqwDwRlmTHY6JW7TYvYrQPE742FHRwxTZI2DMqzcA==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Unpermitted parameter: :username
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://0.0.0.0:3000/signup
+Completed 302 Found in 100ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:07:29 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.1ms)
+  Rendered users/new.html.erb within layouts/application (8.3ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 59ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:07:51 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mXE/oH6MO4zMfl4uoqiP8vzbSpdxsM8/AQvbS7o7GXJm0Uzlwz5S3O6sZvSf/xTZhh+bXiYjArFON4e0yE8J/g==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Unpermitted parameter: :username
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://0.0.0.0:3000/signup
+Completed 302 Found in 92ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:07:51 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered users/new.html.erb within layouts/application (12.9ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 64ms (Views: 62.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:11:16 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (4.0ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 56ms (Views: 54.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:11:27 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FqgraNA6O6T6Kr/UyqTnyiK89pDqvcqgZ1qUEFIzExHpCFgtbYhS9Nj4hw7383zhWHgnWb0uBy4oZsjvIEcDnQ==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]", "lname"=>"Gopalakrishnan", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+Unpermitted parameter: :username
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://0.0.0.0:3000/signup
+Completed 302 Found in 82ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:11:27 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.0ms)
+  Rendered users/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navigation.html.erb (0.7ms)
+  Rendered layouts/_messages.html.erb (0.4ms)
+Completed 200 OK in 54ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-03-19 13:13:20 +0530
+Processing by WelcomeController#index as HTML
+  Rendering welcome/index.html.erb within layouts/application
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_navigation.html.erb (1.5ms)
+  Rendered layouts/_messages.html.erb (0.6ms)
+Completed 200 OK in 112ms (Views: 98.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:13:23 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navigation.html.erb (1.3ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 98ms (Views: 69.1ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:13:31 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EwLXJxspB91RxA7vujQG/JIk5aoO4ho8OaPEBj/qN3XsoqRipptujXMWNjWHY53X6OA0Y1lx17J2n5j5TZ4n+Q==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]", "lname"=>"Gopalakrishnan", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://0.0.0.0:3000/signup
+Completed 302 Found in 92ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:13:31 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.7ms)
+  Rendered users/new.html.erb within layouts/application (6.4ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 55ms (Views: 53.8ms | ActiveRecord: 0.0ms)
+
+
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vijayendran91@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "fname", "lname", "dob") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "vijayendran91"], ["email", "vijayendran91@gmail.com"], ["created_at", "2018-03-19 07:44:47.641335"], ["updated_at", "2018-03-19 07:44:47.641335"], ["password_digest", "$2a$10$ahzqI.4gi0XKvJHTY1jF0.POHUDkv8vxolNhxHPAJ8Op6DACw7qHu"], ["fname", "Vijayendran"], ["lname", "Gopalakrishnan"], ["dob", "1991-04-03 00:00:00"]]
+  [1m[35m (66.1ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:30:08 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BKseQCG+L5KbBJ/Ubk740N6gynhAg7tibFVMTUZm53f7C20FnAxGwrnWpw5TGWP7pGQbsRcQduwjaRCyNBL3+w==", "user"=>{"username"=>"vijayendran91", "password"=>"[FILTERED]", "lname"=>"Gopalakrishnan", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://0.0.0.0:3000/signup
+Completed 302 Found in 109ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:30:08 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.5ms)
+  Rendered users/new.html.erb within layouts/application (7.2ms)
+  Rendered layouts/_navigation.html.erb (0.8ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 54ms (Views: 53.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:35:43 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (1.2ms)
+  Rendered users/new.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_navigation.html.erb (1.0ms)
+  Rendered layouts/_messages.html.erb (0.7ms)
+Completed 200 OK in 103ms (Views: 79.9ms | ActiveRecord: 1.4ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:36:04 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aA/pma1lAHSmaZDfoH57ftrbQs8VvAqpDG4rpUHsWOqXr5rcENdpJIS7qAWdKeBVoB+TBkIvxydDUndaM5hIZg==", "user"=>{"username"=>"vijayendran91", "email"=>"vijayendran91@gmail.com", "fname"=>"Vijayendran", "lname"=>"Gopalakrishnan", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vijayendran91@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://0.0.0.0:3000/signup
+Completed 302 Found in 92ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:36:04 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.8ms)
+  Rendered users/new.html.erb within layouts/application (10.5ms)
+  Rendered layouts/_navigation.html.erb (1.6ms)
+  Rendered layouts/_messages.html.erb (0.5ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:37:44 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M6XKwul5S1bRq6deyPLg0VRUuX3s7VXFXyyB9eR3AL7MBbmHVMsiBvN5n4T1pXv6LpBotLt+mEsQEN0KlgMQMg==", "user"=>{"username"=>"", "email"=>"", "fname"=>"", "lname"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://0.0.0.0:3000/signup
+Completed 302 Found in 9ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/signup" for 127.0.0.1 at 2018-03-19 13:37:44 +0530
+Processing by UsersController#new as HTML
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_errors.html.erb (0.4ms)
+  Rendered users/new.html.erb within layouts/application (5.3ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_messages.html.erb (1.0ms)
+Completed 200 OK in 64ms (Views: 62.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:38:38 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A9+2LZy4exhmPxvPuJrcDGlRNi7THIJHBCAOY1xmo2n8f8VoIQoSSETtIxWFzUcnE5Xn54SPT8lLHFKcLhKz5Q==", "user"=>{"username"=>"vijayendran91", "email"=>"vijayendran91@gmail.com", "fname"=>"Vijayendran", "lname"=>"Gopalakrishnan", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vijayendran91@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 118ms (ActiveRecord: 3.0ms)
+
+
+  
+NoMethodError (undefined method `user_name' for #<User:0x00007ff6eebfc588>
+Did you mean?  username
+               username?
+               username=):
+  
+app/controllers/users_controller.rb:11:in `create'
+Started PUT "/__web_console/repl_sessions/07a67e0592cdb3de24db8d25d5cd859a" for 127.0.0.1 at 2018-03-19 13:40:22 +0530
+Started PUT "/__web_console/repl_sessions/07a67e0592cdb3de24db8d25d5cd859a" for 127.0.0.1 at 2018-03-19 13:40:35 +0530
+Started PUT "/__web_console/repl_sessions/07a67e0592cdb3de24db8d25d5cd859a" for 127.0.0.1 at 2018-03-19 13:40:39 +0530
+Started PUT "/__web_console/repl_sessions/07a67e0592cdb3de24db8d25d5cd859a" for 127.0.0.1 at 2018-03-19 13:40:40 +0530
+Started PUT "/__web_console/repl_sessions/07a67e0592cdb3de24db8d25d5cd859a" for 127.0.0.1 at 2018-03-19 13:40:47 +0530
+Started PUT "/__web_console/repl_sessions/07a67e0592cdb3de24db8d25d5cd859a" for 127.0.0.1 at 2018-03-19 13:40:52 +0530
+Started POST "/users" for 127.0.0.1 at 2018-03-19 13:41:18 +0530
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A9+2LZy4exhmPxvPuJrcDGlRNi7THIJHBCAOY1xmo2n8f8VoIQoSSETtIxWFzUcnE5Xn54SPT8lLHFKcLhKz5Q==", "user"=>{"username"=>"vijayendran", "email"=>"vijayendran@gmail.com", "fname"=>"Vijayendran", "lname"=>"Gopalakrishnan", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create Account"}
+  [1m[35m (0.4ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "vijayendran@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "created_at", "updated_at", "password_digest", "fname", "lname") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["username", "vijayendran"], ["email", "vijayendran@gmail.com"], ["created_at", "2018-03-19 08:11:18.409217"], ["updated_at", "2018-03-19 08:11:18.409217"], ["password_digest", "$2a$10$lhbWBWI.84fLh4FmzQ3Q1.mAK4uIl.5v36NJBYl47IdpI.qv3w4C6"], ["fname", "Vijayendran"], ["lname", "Gopalakrishnan"]]
+  [1m[35m (75.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 176ms (ActiveRecord: 77.0ms)
+
+
+  
+NoMethodError (undefined method `user_name' for #<User:0x00007ff6efc44300>
+Did you mean?  username
+               username?
+               username=):
+  
+app/controllers/users_controller.rb:11:in `create'
