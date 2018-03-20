@@ -6,11 +6,11 @@ class ArticlesController < ApplicationController
 
   def create
     @article=Article.new(article_params)
-    @article.user=User.first
+    @article.username=params[:user_id]
 
-    @article.save
+
     if @article.save
-      redirect_to article_path(@article)
+      redirect_to user_article_path(@article.username,@article.id)
       flash[:success]="article was successfully created"
     else
       render 'new'
@@ -18,7 +18,7 @@ class ArticlesController < ApplicationController
   end
 
   private def article_params
-    params.require(:article).permit(:title, :description)
+    params.require(:article).permit(:title, :description,:username)
   end
 
   def show
@@ -40,7 +40,8 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles=Article.all
+    @user=User.find_by_username(params[:user_id])
+    @article=(Article.where(username: @user.username))
   end
 
   def destroy
@@ -49,5 +50,8 @@ class ArticlesController < ApplicationController
     redirect_to articles_path
     flash[:danger]="Article is deleted !"
   end
-
+  private
+  def user_params
+    params.require(:user).permit(:username,:fname,:lname,:email,:password,:password_confirmation,:dob)
+  end
 end
