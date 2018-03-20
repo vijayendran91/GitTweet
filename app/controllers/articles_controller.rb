@@ -1,14 +1,13 @@
 class ArticlesController < ApplicationController
-  
+
   def new
     @article=Article.new
   end
 
   def create
-   # debugger
     @article=Article.new(article_params)
     @article.user=User.first
-    
+
     @article.save
     if @article.save
       redirect_to article_path(@article)
@@ -16,7 +15,7 @@ class ArticlesController < ApplicationController
     else
       render 'new'
     end
-  end 
+  end
 
   private def article_params
     params.require(:article).permit(:title, :description)
@@ -41,9 +40,9 @@ class ArticlesController < ApplicationController
   end
 
   def index
-    @articles=Article.all  
+    @articles=Article.all
   end
-  
+
   def destroy
     @article=Article.find(params[:id])
     @article.destroy

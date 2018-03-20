@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-
+  include SessionsHelper
   def new
     @user=User.new
   end
@@ -16,9 +16,14 @@ class UsersController < ApplicationController
    end
   end
 
+  def show
+    @user=User.find_by_username (params[:id])
+    @current_user=current_user
+  end
 
   def index
-      
+    @user=User.find_by(params[:id])
+    @current_user=current_user
   end
 
 private
