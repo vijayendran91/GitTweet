@@ -17,10 +17,10 @@ ActiveRecord::Schema.define(version: 20160701014543) do
     t.text "description"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer "user_id"
+    t.string "username"
   end
 
-  create_table "users", force: :cascade do |t|
+  create_table "users", id: false, force: :cascade do |t|
     t.string "username"
     t.string "email"
     t.datetime "created_at", null: false
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(version: 20160701014543) do
     t.string "fname"
     t.string "lname"
     t.datetime "dob"
+    t.index ["username"], name: "index_users_on_username", unique: true
   end
 
 end

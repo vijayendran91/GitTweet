@@ -7,11 +7,19 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(user_params)
-    @user.save
-    redirect_to user_path(@user.user_name)
-
+   if @user.save
+     flash[:success]="Successfully Signed up"
+     redirect_to users_path
+   else
+     flash[:danger] = "Invalid username/password combination."
+     redirect_to(:action => "new")
+   end
   end
 
+
+  def index
+      
+  end
 
 private
   def user_params

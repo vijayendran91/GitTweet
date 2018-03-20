@@ -8,6 +8,10 @@ Rails.application.routes.draw do
    resources :articles
    get 'signup' => 'users#new'
    post 'users' => 'users#create'
+
+   resources :users
+
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
