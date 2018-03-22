@@ -18,7 +18,9 @@ class UsersController < ApplicationController
 
   def show
     @user=User.find_by_username (params[:id])
+    @all_user=User.all
     @current_user=current_user
+    @articles=Article.all
   end
 
   def index
